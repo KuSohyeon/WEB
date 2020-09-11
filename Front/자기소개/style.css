@@ -1,0 +1,106 @@
+*{
+	margin:0;
+	padding:0;
+}
+header, footer, section, nav, article {
+	display: block;
+}
+body {
+	margin: 0 auto;
+	padding: 22px 0;
+	width: 940px;
+	font: 맑은 고딕;
+	
+}
+h1{
+	font-size: 30px;
+	line-height: 44px;
+	padding: 22px 0;
+	text-align:center;
+	color:pink;
+	text-shadow:2px 2px orange;
+}
+h2{
+	font-size: 20px;
+	line-height: 34px;
+	padding: 22px 0;
+	text-align:center;
+	color:orange;
+}
+p {
+	padding-bottom: 22px;
+}
+
+nav {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background-color : orange; 
+}
+nav ul{
+	margin:0 auto;
+	width:940px;
+	list-style:none;
+}
+nav ul li{
+	float:left;
+	text-decoration:none;
+}
+nav ul li a{
+	display:block;
+	margin-right:20px;
+	width:200px;
+	font-size:14px;
+	line-height:40px;
+	text-align:center;
+	text-decoration:none;
+	text-weight:bold;
+	color:white;
+}
+nav ul li a:hover{
+	background-color: pink;
+}
+#content {
+	display: table;
+	table-layout:fixed;
+}
+#mainContent{
+	margin : 0 auto;
+	display:table-cell;
+	padding-right: 50px;
+}
+#secondContent{
+	margin : 0 auto;
+	display:table-cell;
+	
+}
+img{
+	/* Border-radius not implemented yet */
+		-moz-border-radius: 22px;
+		-webkit-border-radius: 22px;
+}
+.small{
+	color:gray;
+	font-size:10px;
+}
+#me, #family{
+	font-weight:bold;
+}
+.myself header, .family header{
+	margin:50px auto;
+}
+fieldset{
+	margin:10px auto;
+	padding:20px;
+	line-height:30px;
+}
+fieldset ul{
+	list-style: square;
+}
+legend{
+	font-weight:bold;
+	color:gray;
+}
+footer{
+	text-align:right;
+}
