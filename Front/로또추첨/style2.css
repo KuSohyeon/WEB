@@ -1,0 +1,59 @@
+*{
+	margin:0;
+	border:0;
+}
+body, div{
+	margin : 0 5px;
+	padding: 10px;
+	align:center;
+	
+}
+body div.here{
+		margin: 0 auto;
+		padding:20px;
+		width : 1500px;
+		height : 200px;
+		border-radius:50px;
+		background-color:skyblue;
+		align:center;
+		
+		
+}
+p{
+		display:block;
+		width:30px;
+		height:30px;
+		font-weight:bold;
+		font-size:20px;
+		float : left;
+		border-radius:200px;
+		padding:50px;
+		margin: 20px 60px;
+		background-color:yellow;
+		text-align:center;
+		
+}
+#goodLuck{
+	text-align:center;
+	font-size:50px;
+	font-weight:bold;
+	color:gray;
+}
+img{
+	 width:80px;
+	  height:80px;
+	  align:center;
+}
+button{
+	width:140px;
+	height:70px;
+	padding:10px;
+	margin:20px 30px;
+	background-color:pink;
+	font-weight:bold;
+	border-radius:20px;
+	align:center;
+}
+.btnarea{
+	margin:0 300px;
+}
