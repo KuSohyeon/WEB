@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$.get("newarticle.json",function(data){
+			makeList(data);
+		});
+		
+		function makeList(data){
+			var newarticlelist="";
+			$.each(data,function(index,item){
+				newarticlelist = "<tr>";
+				newarticlelist += "<td>"+item.no+"</td>"
+				newarticlelist += "<td>"+item.title+"</td>"
+				newarticlelist += "<td>"+item.writer+"</td>"
+				newarticlelist += "<td>"+item.viewCnt+"</td>"
+				newarticlelist += "</tr>";
+				$("#new").append(newarticlelist);
+			});
+		}
+		
+	});
+</script>	
+</head>
+<body>
+<div class="container">
+	<table class="table">
+		<thead class="thead-dark">
+			<tr>
+				<th>글번호</th>
+				<th>제목</th>
+				<th>작성자</th>
+				<th>조회수</th>
+			</tr>
+		</thead>
+		<tbody id="new">
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

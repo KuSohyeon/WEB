@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인기글</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+table{
+	width: 400px;
+	height: 150px;
+}
+</style>
+
+<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			url:"poparticle.xml",
+			type:"GET",
+			dataType:"xml",
+			success:function(data){
+				makeList(data);
+			},
+			error:function(xhr,status,msg){
+				console.log("에러 상태 : "+status+"Http 에러메세지: "+msg);
+			}
+		});
+		
+		function makeList(data){
+			var poparticlelist='';
+			$(data).find("article").each(function(){
+				poparticlelist ='<tr>';
+				poparticlelist += '<td>'+$(this).find("title").text()+'</td>';
+				poparticlelist += '<td>'+$(this).find("writer").text()+'</td>';
+				poparticlelist += '<td>'+$(this).find("viewCnt").text()+'</td>';
+				poparticlelist +='</tr>';
+				/* $("#pop").append(poparticlelist); */
+				$("tbody").append(poparticlelist);
+				
+			});
+			
+		}
+	});
+	</script>
+</head>
+<body>
+<div class="container">
+<table class="table table-striped"">
+	<thead>
+	<tr>
+		<th>제목</th>
+		<th>작성자</th>
+		<th>조회수</th>		
+	</tr>
+	<thead>
+	<tbody id = "pop"></tbody>
+</table>
+</div>
+</body>
+</html>
