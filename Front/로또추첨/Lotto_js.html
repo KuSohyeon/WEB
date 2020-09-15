@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		margin:0 auto;
+		padding:10px;
+	}
+	header{
+		
+		margin: 50px auto;
+		text-align:center;
+		padding:20px;
+	}
+	h1{
+		display:inline-block;
+		font-size:50px;
+		color:gray;
+	}
+	#place{
+		background-color:skyblue;
+		weight:100%;
+		height:300px;
+		border-radius:50px;
+		text-align:center;
+	}
+	#place span{
+		display:inline-block;
+		width:80px;
+		height:80px;
+		padding:30px;
+		margin: 100px 50px;
+		border-radius:80px;
+		color:black;
+		background: yellow;
+		margin-right: 1em;
+		text-align:center;
+		line-height:70px;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	button{
+		
+		width:50px;
+		height:50px;
+		margin:0 20px;
+		padding:5px;
+		text-align:center;
+		background-color:pink;
+		border-radius:10px;
+		font-size:15px;
+		
+	}
+</style>
+<script type="text/javascript">
+	var numbers = new Array(7);
+	var isSelected = new Array(46);
+	
+	
+	for(var i=0;i<46;i++){
+		isSelected[i]=false;
+	}
+	
+	var selectNum = function(){
+		var i=0;
+		while(i<7){
+			var num = Math.ceil(Math.random()*45);
+			if(!isSelected[num]){
+				isSelected[num]=true;
+				numbers[i++]=num;
+			}
+			console.log(num);
+		}
+	}
+	
+	var i=0;
+		
+	const btnStart = document.getElementById("start");
+	
+	btnStart=addEventListener("click",function(){
+		
+		selectNum();
+		
+		var value = setInterval(function(){
+			
+			var tmp = document.getElementById("place");
+			
+			tmp.innerHTML +="<span>"+numbers[i++]+"</span>";
+			
+			if(i==7){
+				i=0;
+				clearInterval(value);
+			}
+		
+		},1000);
+	});
+	
+
+
+
+</script>
+</head>
+<body>
+	<div>
+		<header><h1>Lotto</h1><button id="start">start</button></header>
+		<div id="place">
+		
+		</div>
+ 		 
+	</div>
+</body>
+</html>
