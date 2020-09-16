@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>글목록 화면</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<body>
+	<div class="container">
+		<div id="top" style="text-align: right">
+			<span><b>소현</b>님 환영합니다.</span>
+			<button type="button" class="btn btn-link" style="text-decoration: underline">로그아웃</button>
+		</div>
+		<div id="main">
+			<header class="text-center">
+				<h2>게시판</h2>
+			</header>
+			<nav class="navbar navbar-expand-sm bg-white">
+				<button type="button" class="btn btn-primary"><a href="./index1.html" class="text-white">글쓰기</a></button>
+				<form>
+					<div class="input-group mt-3 mb-3">
+						<div class="input-group-prepend">
+							<button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">선택</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">아이디</a> <a class="dropdown-item" href="#">글제목</a> <a class="dropdown-item" href="#">글번호</a>
+							</div>
+						</div>
+						<input type="text" class="form-control" placeholder="검색어 입력">
+						<button type="submit" class="btn btn-secondary" style="margin: 0 5px">검색</button>
+					</div>
+
+				</form>
+			</nav>
+
+			<div id="list">
+				<table class="table table-hover">
+					<thead>
+						<th>글번호</th>
+						<th>제목</th>
+						<th>작성자</th>
+						<th>조회수</th>
+						<th>작성일</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>글번호</td>
+							<td>글제목</td>
+							<td>작성자</td>
+							<td>조회수</td>
+							<td>작성일</td>
+						</tr>
+						<tr>
+							<td>글번호</td>
+							<td>글제목</td>
+							<td>작성자</td>
+							<td>조회수</td>
+							<td>작성일</td>
+						</tr>
+						<tr>
+							<td>글번호</td>
+							<td>글제목</td>
+							<td>작성자</td>
+							<td>조회수</td>
+							<td>작성일</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<footer>
+				<ul class="pagination justify-content-center">
+					<li class="page-item"><a class="page-link" href="#">최신</a></li>
+					<li class="page-item"><a class="page-link" href="#">이전</a></li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item active"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">다음</a></li>
+					<li class="page-item"><a class="page-link" href="#">마지막</a></li>
+				</ul>
+			</footer>
+		</div>
+
+	</div>
+
+</body>
+</html>

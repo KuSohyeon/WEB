@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>글보기 화면</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="top" style="text-align: right">
+			<span><b>소현</b>님 환영합니다.</span>
+			<button type="button" class="btn btn-link" style="text-decoration: underline">로그아웃</button>
+		</div>
+		<div id="main">
+			<header class="text-center">
+				<h2>게시판</h2>
+			</header>
+			<nav class="navbar navbar-expand-sm bg-white">
+				<button type="button" class="btn btn-primary" style="margin-right:10px"><a href="./index1.html" class="text-white">새글쓰기</a></button>
+				<button type="button" class="btn btn-info" style="margin-right:10px">수정</button>
+				<button type="button" class="btn btn-danger" style="margin-right:10px">삭제</button>
+			</nav>
+			<div id="table">
+				<table class="table table-bordered">
+					<thead>
+						<th>제목</th>
+						<th colspan="5">글제목</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>작성자</td>
+							<td>작성자</td>
+							<td>조회수</td>
+							<td>00</td>
+							<td>작성일</td>
+							<td>2020.09.16</td>
+						</tr>
+						<tr height="200px">
+							<td colspan="6">글내용</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="backlist" class="text-center">
+				<button type="button" class="btn btn-info">최신목록</button>
+				<button type="button" class="btn btn-info">이전목록</button>
+			</div>
+			
+			<div id="coment" class="row">
+			<div class="col-10">
+			<textarea class="form-control" id="content" name="content" row="4" placeholder="주제와 무관한 댓글, 악플은 삭제될 수 있습니다." style="margin-top:10px"></textarea>
+			</div>
+			<div class="col-2">
+			<button type="button" class="btn btn-lg btn-primary" style="margin-top:10px">작성</button>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

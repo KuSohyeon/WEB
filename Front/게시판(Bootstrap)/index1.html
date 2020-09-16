@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>글쓰기 화면
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+	<div id="top" style="text-align:right">
+	<span><b>소현</b>님 환영합니다.</span>
+	<button type="button" class="btn btn-link" style="text-decoration:underline">로그아웃</button>
+	</div>
+	<div id="main">
+	<header style="text-align:center"><h2>게시판</h2></header>
+	<form action="/action_page.php">
+    <div class="form-group">
+      <label for="title">제목:</label>
+      <input type="text" class="form-control" id="title" name="title">
+    </div>
+    <div class="form-group">
+      <label for="content">내용:</label>
+      <textarea class="form-control" id="content" name="content" rows="10"></textarea>
+    </div>
+    <div class="text-center">
+	    <button type="submit" class="btn btn-primary">글작성</button>
+	    <button type="reset" class="btn btn-warning">초기화</button>
+	    <button type="button" class="btn btn-dark"><a href="./index2.html" class="text-white">목록</a></button>
+    </div>
+  </form>
+	
+	
+	</div>
+</body>
+</html>
