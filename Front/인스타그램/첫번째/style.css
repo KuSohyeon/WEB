@@ -1,0 +1,157 @@
+*{
+ 	margin:0 auto;
+ 	padding: 0;
+ }
+ nav{
+ 	margin:5px;
+ }
+
+ .grid-container{
+   display: grid;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0;
+  padding: 0px;
+}
+ .grid-container2{
+   display: grid;
+  align-content: center;
+  grid-template-columns: 50px 50px 50px;
+  grid-gap: 10px;
+  padding: 0px;
+}
+ 
+ }
+ .logo{
+   display:inline-block;
+	 margin: 0 auto;
+ 	width:100px;
+ 	height:30px;
+ }
+ .side{
+  display:inline-block;
+ 	width:240px;
+ 	height:50px;
+ 	float:right;
+ 	margin: 10px auto;
+ 	vertical-align:middle;
+ }
+ .search{
+  display:inline-block;
+ 	margin:20px auto;
+ 	width:200px;
+ 	height:30px;
+ 	text-align:center;
+ 	vertical-align: top;
+ 	
+ 	
+ }
+ hr{
+ 	margin:0;
+ } 
+ section{
+  margin: 0 0 0 500px;   
+ display: inline-block;
+ float:left;
+ width:700px;
+ 
+ }
+ aside{
+   margin: 10px 500px 0 0; 
+  display: inline-block;
+  position:sticky;
+  float:right;
+  width:400px;
+ }
+ article{
+ 	margin: 20px auto;
+ }
+ .story{
+ 	margin:10px auto;
+ 	padding:10px;
+ 	/*width:640px;  */
+ 	height:80px;
+ 	border : 1px solid gray;
+ 	border-radius:5px;
+ 	text-align:center;
+ }
+ .mypage{
+ 	margin:10px auto;
+ 	padding:10px;
+ }
+ .highlight{
+ 	width:550px;
+ 	height:80px;
+ 	padding:0;
+ 	float:center;
+ 	
+ }
+ article>.post{
+	margin:10px auto;
+ 	border : 1px solid gray;
+ 	border-radius:5px;
+ 	text-align:center;
+ }
+ .post-nav>div{
+ 	display:inline-block;
+ 	margin: 0;
+ 	padding:0;
+ }
+ .user{
+ 	position:relative;
+ 	width:200px;
+ 	height:50px;
+ 	margin:0;
+ 	float:left;
+ }
+ .other{
+ 	position: relative;
+ 	margin: 20px auto;
+ 	float:right;
+ }
+ .image>img{
+ 	margin: 20px auto 0;
+ 	width:698px;
+ 	height:700px;
+ }
+ .user>p{
+	display:inline-block;
+	margin:20px 10px;
+	font-size:15px;
+	font-weight:bold;
+	vertical-align:top;
+ }
+ .user>img{
+ 	margin: 5px 0 5px; 
+ 	width:60px;
+ 	height:60px;
+ }
+ .image-bottom>a>img{
+ display:inline-block;
+ position:relative;
+ height:40px;
+ }
+ .like{
+ 	position:relative;
+ 	margin : 0 20px;
+ 	float:left;
+ 	font-weight:bold;
+ }
+ .bookmark{
+ 	position:relative;
+ 	margin : 0 20px;
+ 	float:right;	
+ }
+ .letter{
+ 	float:left;
+ 	text-algin:left;
+ 	margin : 0 20px;
+ }
+ .mypage>img{
+ 	width:400px;
+ 	height:500px;
+ }
+ footer>p{
+ 	font-size:10px;
+ 	color:gray;
+ }
