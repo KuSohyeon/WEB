@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.corona.model.mapper.CountryStatusMapper">
+
+	<insert id="insert" parameterType="CountryStatus">
+		insert into country_status 
+		values (#{ccode}, #{cname}, #{patient}, #{rcode})
+	</insert>
+	
+	<select id="list"  resultType="CountryStatus">
+		select *
+		from country_status
+	</select>
+	
+	<delete id="delete" parameterType="string">
+	delete from country_status
+	where ccode = #{ccode}
+	</delete>
+	
+</mapper>

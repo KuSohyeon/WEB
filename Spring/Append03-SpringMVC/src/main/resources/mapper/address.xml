@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.prj.model.mapper.AddressMapper">
+
+	<select id="selectAddress" parameterType="string" resultType="address">
+		select *
+		  from ssafy_address 
+		 where owner_id = #{ownerId}
+	</select>
+
+	<insert id="insertAddress" parameterType="address">
+		insert into ssafy_address(
+			name, email, address, birth, area_code, owner_id
+		) values (
+			#{name}, #{email}, #{address}, #{birth}, #{areaCode}, #{ownerId}
+		)
+	</insert>
+	
+	<delete id="deleteAddress" parameterType="int">
+		delete 
+		  from ssafy_address 
+		 where no = #{no}
+	</delete>
+</mapper>
